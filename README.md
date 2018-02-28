@@ -6,11 +6,16 @@ A frustrating project from:
 
 [![Gravity Department](http://gravitydept.com/_themes/gravdept/img/logo-footer.png)](http://gravitydept.com/)
 
-## Purpose
+## Problem
 
 Magento does not provide usable DIFF files for new releases. Every year the copyright text changes, which makes the diff completely unusable (10,000+ vs 200 changes).
 
-The purpose of this project is to normalize those copyright changes, and provide an actual diff of the changes.
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Raise a glass to my 9th year pointing out <a href="https://twitter.com/magento?ref_src=twsrc%5Etfw">@magento</a> changing copyright in every file once a year costs thousands of non-productive hours.<br><br>The release diff has 9251 changes like this. Everyone has to individually decipher what actually changed. <a href="https://t.co/XDS69fJsfF">pic.twitter.com/XDS69fJsfF</a></p>&mdash; Brendan Falkowski (@Falkowski) <a href="https://twitter.com/Falkowski/status/968941703926198272?ref_src=twsrc%5Etfw">February 28, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+## Purpose
+
+This project normalizes the copyright changes between Magento releases, and provide a diff containing only legitimate changes.
 
 ## Could Magento solve this?
 
@@ -39,7 +44,7 @@ Add the following header text to the file:
 ```
 
 RELEASE DIFF
-Magento Community 1.9.1.1 - 1.9.2.0
+Magento Community [oldRelease] — [newRelease]
 https://github.com/gravitydepartment/magento-release-diffs
 
 // ----------------------------------------------
