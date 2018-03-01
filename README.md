@@ -1,28 +1,20 @@
 # Magento Release Diffs
 
-Release diffs for Magento (minus copyright changes).
-
-A frustrating project from:
+Useful release diffs for Magento (without copyright changes).
 
 [![Gravity Department](http://gravitydept.com/_themes/gravdept/img/logo-footer.png)](http://gravitydept.com/)
 
-## Problem
+## Backstory
 
 Magento does not provide usable DIFF files for new releases. Every year the copyright text changes, which makes the diff completely unusable (10,000+ vs 200 changes).
 
-Example: https://twitter.com/Falkowski/status/968941703926198272
+More info: http://gravitydept.com/blog/usable-release-diffs-for-magento
 
 ## Purpose
 
 This project normalizes the copyright changes between Magento releases, and provide a diff containing only legitimate changes.
 
-## Could Magento solve this?
-
-Yes. They could choose not to change their copyright text annually. Or they could publish a release on January 1 with copyright changes only. They have a process problem, and it's been annoying since 2009.
-
-Fixing it would free every individual developer from needing to generate a legitimate diff. We're collectively wasting thousands of hours to decipher releases afflicted by copyright changes.
-
-## How to create a diff file
+## Process to create a diff file
 
 1. Download the target and preceding release of Magento.
 1. Create an Git repo.
@@ -50,6 +42,18 @@ https://github.com/gravitydepartment/magento-release-diffs
 
 ```
 
+## Release Coverage
+
+### Magento 1
+
+GravDept is committed to producing new diffs for Magento 1 until it's unsupported. I went backward several years to 1.8.x then stopped. There shouldn't be stores older than that in the wild, but if a need presents itself I'll go back further.
+
+Note: Magento Enterprise is not covered because I don't want to poke the bear.
+
+### Magento 2
+
+Note: initially I'm focused on M1, but I'd like to produce comparable diffs for all M2 releases.
+
 ## Contributing
 
-Contributions are welcome. Please follow the same process / formatting for consistency.
+Contributions are welcome. Please follow the same process and formatting for consistency.
