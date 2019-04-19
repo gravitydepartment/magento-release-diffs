@@ -1,0 +1,154 @@
+
+RELEASE DIFF
+Magento Community 1.9.3.10 - 1.9.4.0
+https://github.com/gravitydepartment/magento-release-diffs
+
+// ----------------------------------------------
+
+M	magento/RELEASE_NOTES.txt
+M	magento/app/Mage.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Attribute/Edit/Tab/Main.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Customer/Group/Edit.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Newsletter/Template/Edit.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Catalog/Product/AttributeController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Cms/BlockController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Customer/GroupController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/SitemapController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/System/BackupController.php
+M	magento/app/code/core/Mage/Captcha/Model/Observer.php
+M	magento/app/code/core/Mage/Captcha/Model/Zend.php
+M	magento/app/code/core/Mage/Captcha/etc/config.xml
+M	magento/app/code/core/Mage/Catalog/Helper/Product/Flat.php
+M	magento/app/code/core/Mage/Catalog/Model/Api2/Product/Image/Rest/Admin/V1.php
+M	magento/app/code/core/Mage/Catalog/Model/Product.php
+M	magento/app/code/core/Mage/Catalog/Model/Product/Attribute/Media/Api.php
+M	magento/app/code/core/Mage/Catalog/Model/Resource/Product/Collection.php
+M	magento/app/code/core/Mage/Checkout/controllers/CartController.php
+M	magento/app/code/core/Mage/Checkout/controllers/MultishippingController.php
+M	magento/app/code/core/Mage/Checkout/controllers/OnepageController.php
+M	magento/app/code/core/Mage/Cms/Model/Wysiwyg/Images/Storage.php
+M	magento/app/code/core/Mage/ConfigurableSwatches/Helper/Productimg.php
+M	magento/app/code/core/Mage/Core/Helper/Data.php
+M	magento/app/code/core/Mage/Core/Model/Resource/Session.php
+M	magento/app/code/core/Mage/Core/Model/Session/Abstract/Varien.php
+M	magento/app/code/core/Mage/Core/etc/config.xml
+M	magento/app/code/core/Mage/Core/etc/jstranslator.xml
+M	magento/app/code/core/Mage/Core/functions.php
+A	magento/app/code/core/Mage/Core/sql/core_setup/upgrade-1.6.0.7-1.6.0.8.php
+M	magento/app/code/core/Mage/Customer/Model/Customer/Attribute/Source/Group.php
+M	magento/app/code/core/Mage/Customer/Model/Customer/Attribute/Source/Store.php
+M	magento/app/code/core/Mage/Customer/Model/Customer/Attribute/Source/Website.php
+M	magento/app/code/core/Mage/Customer/Model/Entity/Address/Attribute/Source/Country.php
+M	magento/app/code/core/Mage/Customer/Model/Resource/Address/Attribute/Source/Country.php
+M	magento/app/code/core/Mage/Customer/Model/Resource/Address/Attribute/Source/Region.php
+M	magento/app/code/core/Mage/Dataflow/Model/Convert/Container/Abstract.php
+M	magento/app/code/core/Mage/Eav/Model/Entity/Attribute/Source/Store.php
+M	magento/app/code/core/Mage/ImportExport/Model/Export/Entity/Customer.php
+M	magento/app/code/core/Mage/ImportExport/Model/Export/Entity/Product.php
+M	magento/app/code/core/Mage/ImportExport/Model/Import/Entity/Customer.php
+M	magento/app/code/core/Mage/ImportExport/Model/Import/Entity/Customer/Address.php
+M	magento/app/code/core/Mage/Index/Model/Process.php
+M	magento/app/code/core/Mage/Install/etc/install.xml
+M	magento/app/code/core/Mage/Payment/etc/config.xml
+M	magento/app/code/core/Mage/Payment/etc/system.xml
+A	magento/app/code/core/Mage/Payment/sql/payment_setup/upgrade-1.6.0.0-1.6.0.1.php
+M	magento/app/code/core/Mage/Sales/Model/Resource/Quote/Item/Collection.php
+M	magento/app/code/core/Mage/Sales/etc/config.xml
+M	magento/app/code/core/Mage/Sendfriend/Block/Send.php
+M	magento/app/code/core/Mage/Shipping/Model/Carrier/Abstract.php
+M	magento/app/code/core/Mage/Shipping/Model/Carrier/Flatrate.php
+M	magento/app/code/core/Mage/Tax/Model/Resource/Calculation.php
+M	magento/app/code/core/Mage/Wishlist/Model/Observer.php
+M	magento/app/code/core/Mage/Wishlist/controllers/IndexController.php
+A	magento/app/code/core/Zend/Controller/Request/Http.php
+A	magento/app/code/core/Zend/Locale/Math/PhpMath.php
+A	magento/app/code/core/Zend/Validate/File/Upload.php
+M	magento/app/design/adminhtml/default/default/template/cms/browser/content/files.phtml
+M	magento/app/design/frontend/base/default/layout/captcha.xml
+M	magento/app/design/frontend/base/default/template/wishlist/sharing.phtml
+M	magento/app/design/frontend/rwd/default/layout/page.xml
+M	magento/app/design/frontend/rwd/default/template/sendfriend/send.phtml
+M	magento/app/etc/modules/Mage_All.xml
+M	magento/app/etc/modules/Mage_Captcha.xml
+M	magento/app/locale/en_US/Mage_Catalog.csv
+M	magento/app/locale/en_US/Mage_Core.csv
+M	magento/app/locale/en_US/Mage_Eav.csv
+M	magento/app/locale/en_US/Mage_Wishlist.csv
+A	magento/dev/tests/functional/lib/Magento/Mtf/Client/Driver/Selenium/Driver.php
+A	magento/dev/tests/functional/lib/Magento/Mtf/Client/Element/SimpleElement.php
+M	magento/dev/tests/functional/tests/app/Mage/Adminhtml/Test/Block/Sales/Order/Create/Payment.php
+M	magento/dev/tests/functional/tests/app/Mage/Paypal/Test/Block/NewLogin.php
+M	magento/downloader/Maged/Controller.php
+D	magento/js/lib/jquery/jquery-1.12.0.min.js
+D	magento/js/lib/jquery/jquery-1.12.0.min.map
+R099	magento/js/lib/jquery/jquery-1.12.0.js	magento/js/lib/jquery/jquery-1.12.1.js
+A	magento/js/lib/jquery/jquery-1.12.1.min.js
+A	magento/js/lib/jquery/jquery-1.12.1.min.map
+M	magento/js/prototype/validation.js
+M	magento/lib/Varien/Autoload.php
+M	magento/lib/Varien/File/Uploader.php
+M	magento/lib/Varien/Io/Sftp.php
+A	magento/lib/mcryptcompat/mcrypt.php
+M	magento/lib/phpseclib/Crypt/AES.php
+A	magento/lib/phpseclib/Crypt/Base.php
+A	magento/lib/phpseclib/Crypt/Blowfish.php
+M	magento/lib/phpseclib/Crypt/DES.php
+M	magento/lib/phpseclib/Crypt/Hash.php
+A	magento/lib/phpseclib/Crypt/RC2.php
+M	magento/lib/phpseclib/Crypt/RC4.php
+M	magento/lib/phpseclib/Crypt/RSA.php
+M	magento/lib/phpseclib/Crypt/Random.php
+M	magento/lib/phpseclib/Crypt/Rijndael.php
+M	magento/lib/phpseclib/Crypt/TripleDES.php
+A	magento/lib/phpseclib/Crypt/Twofish.php
+A	magento/lib/phpseclib/File/ANSI.php
+A	magento/lib/phpseclib/File/ASN1.php
+A	magento/lib/phpseclib/File/ASN1/Element.php
+A	magento/lib/phpseclib/File/X509.php
+M	magento/lib/phpseclib/Math/BigInteger.php
+A	magento/lib/phpseclib/Net/SCP.php
+M	magento/lib/phpseclib/Net/SFTP.php
+A	magento/lib/phpseclib/Net/SFTP/Stream.php
+M	magento/lib/phpseclib/Net/SSH1.php
+M	magento/lib/phpseclib/Net/SSH2.php
+A	magento/lib/phpseclib/System/SSH/Agent.php
+A	magento/lib/phpseclib/System/SSH/Agent/Identity.php
+A	magento/lib/phpseclib/bootstrap.php
+A	magento/lib/phpseclib/openssl.cnf
+R084	magento/var/package/Cm_RedisSession-1.9.3.10.xml	magento/var/package/Cm_RedisSession-1.9.4.0.xml
+R099	magento/var/package/Interface_Adminhtml_Default-1.9.3.10.xml	magento/var/package/Interface_Adminhtml_Default-1.9.4.0.xml
+R098	magento/var/package/Interface_Frontend_Base_Default-1.9.3.10.xml	magento/var/package/Interface_Frontend_Base_Default-1.9.4.0.xml
+R098	magento/var/package/Interface_Frontend_Default-1.9.3.10.xml	magento/var/package/Interface_Frontend_Default-1.9.4.0.xml
+R098	magento/var/package/Interface_Frontend_Rwd_Default-1.9.3.10.xml	magento/var/package/Interface_Frontend_Rwd_Default-1.9.4.0.xml
+R094	magento/var/package/Interface_Install_Default-1.9.3.10.xml	magento/var/package/Interface_Install_Default-1.9.4.0.xml
+R080	magento/var/package/Lib_Cm-1.9.3.10.xml	magento/var/package/Lib_Cm-1.9.4.0.xml
+R086	magento/var/package/Lib_Credis-1.9.3.10.xml	magento/var/package/Lib_Credis-1.9.4.0.xml
+R083	magento/var/package/Lib_Google_Checkout-1.9.3.10.xml	magento/var/package/Lib_Google_Checkout-1.9.4.0.xml
+R088	magento/var/package/Lib_IDNA2-1.9.3.10.xml	magento/var/package/Lib_IDNA2-1.9.4.0.xml
+R095	magento/var/package/Lib_Js_Calendar-1.51.1.16.xml	magento/var/package/Lib_Js_Calendar-1.51.1.17.xml
+R099	magento/var/package/Lib_Js_Ext-1.9.3.10.xml	magento/var/package/Lib_Js_Ext-1.9.4.0.xml
+R092	magento/var/package/Lib_Js_Mage-1.9.3.10.xml	magento/var/package/Lib_Js_Mage-1.9.4.0.xml
+R098	magento/var/package/Lib_Js_Prototype-1.9.3.10.xml	magento/var/package/Lib_Js_Prototype-1.9.4.0.xml
+R099	magento/var/package/Lib_Js_TinyMCE-3.5.11.15.xml	magento/var/package/Lib_Js_TinyMCE-3.5.11.16.xml
+R092	magento/var/package/Lib_LinLibertineFont-2.8.14.16.xml	magento/var/package/Lib_LinLibertineFont-2.8.14.17.xml
+R098	magento/var/package/Lib_Mage-1.9.3.10.xml	magento/var/package/Lib_Mage-1.9.4.0.xml
+R094	magento/var/package/Lib_Magento-1.9.3.10.xml	magento/var/package/Lib_Magento-1.9.4.0.xml
+A	magento/var/package/Lib_Mcryptcompat-1.9.4.0.xml
+R086	magento/var/package/Lib_Pelago-1.9.3.10.xml	magento/var/package/Lib_Pelago-1.9.4.0.xml
+D	magento/var/package/Lib_Phpseclib-1.9.3.10.xml
+A	magento/var/package/Lib_Phpseclib-1.9.4.0.xml
+R091	magento/var/package/Lib_Unserialize-1.9.3.10.xml	magento/var/package/Lib_Unserialize-1.9.4.0.xml
+R096	magento/var/package/Lib_Varien-1.9.3.10.xml	magento/var/package/Lib_Varien-1.9.4.0.xml
+R099	magento/var/package/Lib_ZF-1.12.10.15.xml	magento/var/package/Lib_ZF-1.12.10.16.xml
+R099	magento/var/package/Lib_ZF_Locale-1.12.10.15.xml	magento/var/package/Lib_ZF_Locale-1.12.10.16.xml
+D	magento/var/package/Mage_All_Latest-1.9.3.10.xml
+A	magento/var/package/Mage_All_Latest-1.9.4.0.xml
+R096	magento/var/package/Mage_Centinel-1.9.3.10.xml	magento/var/package/Mage_Centinel-1.9.4.0.xml
+R088	magento/var/package/Mage_Compiler-1.9.3.10.xml	magento/var/package/Mage_Compiler-1.9.4.0.xml
+R098	magento/var/package/Mage_Core_Adminhtml-1.9.3.10.xml	magento/var/package/Mage_Core_Adminhtml-1.9.4.0.xml
+D	magento/var/package/Mage_Core_Modules-1.9.3.10.xml
+A	magento/var/package/Mage_Core_Modules-1.9.4.0.xml
+R098	magento/var/package/Mage_Downloader-1.9.3.10.xml	magento/var/package/Mage_Downloader-1.9.4.0.xml
+R092	magento/var/package/Mage_Locale_en_US-1.9.3.10.xml	magento/var/package/Mage_Locale_en_US-1.9.4.0.xml
+R099	magento/var/package/Magento_Mobile-1.9.3.10.xml	magento/var/package/Magento_Mobile-1.9.4.0.xml
+R097	magento/var/package/Phoenix_Moneybookers-1.9.3.10.xml	magento/var/package/Phoenix_Moneybookers-1.9.4.0.xml
