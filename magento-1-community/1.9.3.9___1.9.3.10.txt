@@ -1,0 +1,127 @@
+
+RELEASE DIFF
+Magento Community 1.9.3.9 - 1.9.3.10
+https://github.com/gravitydepartment/magento-release-diffs
+
+// ----------------------------------------------
+
+M	magento/RELEASE_NOTES.txt
+M	magento/app/Mage.php
+M	magento/app/code/core/Mage/Admin/Model/User.php
+M	magento/app/code/core/Mage/Admin/etc/config.xml
+M	magento/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Edit/Tab/Super/Config.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Widget/Grid/Massaction/Abstract.php
+M	magento/app/code/core/Mage/Adminhtml/Model/LayoutUpdate/Validator.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Permissions/UserController.php
+M	magento/app/code/core/Mage/Adminhtml/etc/config.xml
+M	magento/app/code/core/Mage/Checkout/Model/Api/Resource/Customer.php
+M	magento/app/code/core/Mage/Checkout/Model/Type/Onepage.php
+M	magento/app/code/core/Mage/Cms/Model/Wysiwyg/Images/Storage.php
+M	magento/app/code/core/Mage/Core/etc/config.xml
+M	magento/app/code/core/Mage/Core/etc/system.xml
+M	magento/app/code/core/Mage/Customer/Helper/Data.php
+M	magento/app/code/core/Mage/Customer/Model/Customer.php
+M	magento/app/code/core/Mage/Customer/Model/Resource/Customer.php
+M	magento/app/code/core/Mage/Customer/controllers/AccountController.php
+M	magento/app/code/core/Mage/Customer/etc/config.xml
+A	magento/app/code/core/Mage/Customer/sql/customer_setup/upgrade-1.6.2.0.6-1.6.2.0.7.php
+M	magento/app/code/core/Mage/Paypal/Model/Express/Checkout.php
+M	magento/app/code/core/Mage/XmlConnect/controllers/ReviewController.php
+M	magento/app/code/core/Zend/Filter/PregReplace.php
+M	magento/app/design/adminhtml/default/default/template/bundle/product/edit/bundle/option.phtml
+M	magento/app/design/adminhtml/default/default/template/bundle/sales/creditmemo/create/items/renderer.phtml
+M	magento/app/design/adminhtml/default/default/template/bundle/sales/creditmemo/view/items/renderer.phtml
+M	magento/app/design/adminhtml/default/default/template/bundle/sales/invoice/create/items/renderer.phtml
+M	magento/app/design/adminhtml/default/default/template/bundle/sales/invoice/view/items/renderer.phtml
+M	magento/app/design/adminhtml/default/default/template/bundle/sales/order/view/items/renderer.phtml
+M	magento/app/design/adminhtml/default/default/template/bundle/sales/shipment/create/items/renderer.phtml
+M	magento/app/design/adminhtml/default/default/template/bundle/sales/shipment/view/items/renderer.phtml
+M	magento/app/design/adminhtml/default/default/template/catalog/product/helper/gallery.phtml
+M	magento/app/design/frontend/base/default/template/bundle/email/order/items/creditmemo/default.phtml
+M	magento/app/design/frontend/base/default/template/bundle/email/order/items/invoice/default.phtml
+M	magento/app/design/frontend/base/default/template/bundle/email/order/items/order/default.phtml
+M	magento/app/design/frontend/base/default/template/bundle/email/order/items/shipment/default.phtml
+M	magento/app/design/frontend/base/default/template/bundle/sales/order/creditmemo/items/renderer.phtml
+M	magento/app/design/frontend/base/default/template/bundle/sales/order/invoice/items/renderer.phtml
+M	magento/app/design/frontend/base/default/template/bundle/sales/order/items/renderer.phtml
+M	magento/app/design/frontend/base/default/template/bundle/sales/order/shipment/items/renderer.phtml
+M	magento/app/design/frontend/base/default/template/downloadable/checkout/multishipping/item/downloadable.phtml
+M	magento/app/design/frontend/base/default/template/downloadable/email/order/items/creditmemo/downloadable.phtml
+M	magento/app/design/frontend/base/default/template/downloadable/email/order/items/invoice/downloadable.phtml
+M	magento/app/design/frontend/base/default/template/downloadable/email/order/items/order/downloadable.phtml
+M	magento/app/design/frontend/base/default/template/downloadable/sales/order/creditmemo/items/renderer/downloadable.phtml
+M	magento/app/design/frontend/base/default/template/downloadable/sales/order/invoice/items/renderer/downloadable.phtml
+M	magento/app/design/frontend/default/iphone/template/bundle/sales/order/items/renderer.phtml
+M	magento/app/design/frontend/default/iphone/template/downloadable/sales/order/creditmemo/items/renderer/downloadable.phtml
+M	magento/app/design/frontend/default/iphone/template/downloadable/sales/order/invoice/items/renderer/downloadable.phtml
+M	magento/app/design/frontend/default/iphone/template/downloadable/sales/order/items/renderer/downloadable.phtml
+M	magento/app/design/frontend/rwd/default/template/bundle/email/order/items/creditmemo/default.phtml
+M	magento/app/design/frontend/rwd/default/template/bundle/email/order/items/invoice/default.phtml
+M	magento/app/design/frontend/rwd/default/template/bundle/email/order/items/order/default.phtml
+M	magento/app/design/frontend/rwd/default/template/bundle/email/order/items/shipment/default.phtml
+M	magento/app/design/frontend/rwd/default/template/bundle/sales/order/items/renderer.phtml
+M	magento/app/design/frontend/rwd/default/template/downloadable/email/order/items/creditmemo/downloadable.phtml
+M	magento/app/design/frontend/rwd/default/template/downloadable/email/order/items/invoice/downloadable.phtml
+M	magento/app/design/frontend/rwd/default/template/downloadable/email/order/items/order/downloadable.phtml
+M	magento/app/locale/en_US/Mage_Adminhtml.csv
+M	magento/app/locale/en_US/Mage_Core.csv
+M	magento/app/locale/en_US/Mage_Customer.csv
+M	magento/app/locale/en_US/template/email/account_password_reset_confirmation.html
+A	magento/app/locale/en_US/template/email/admin_new_user_notification.html
+A	magento/dev/tests/functional/tests/app/Mage/Paypal/Test/Block/NewLogin.php
+A	magento/dev/tests/functional/tests/app/Mage/Paypal/Test/Block/NewLogin.xml
+A	magento/dev/tests/functional/tests/app/Mage/Paypal/Test/Block/NewLoginPassword.xml
+M	magento/dev/tests/functional/tests/app/Mage/Paypal/Test/Page/Paypal.php
+M	magento/dev/tests/functional/tests/app/Mage/Paypal/Test/TestStep/ContinuePayPalCheckoutStep.php
+M	magento/dev/tests/functional/tests/app/Mage/Paypal/Test/TestStep/LoginToPayPalStep.php
+M	magento/downloader/Maged/Controller.php
+M	magento/skin/adminhtml/default/default/images/login_logo.gif
+M	magento/skin/adminhtml/default/default/images/logo-large.gif
+M	magento/skin/adminhtml/default/default/images/logo_email.gif
+M	magento/skin/adminhtml/default/default/images/logo_print.gif
+M	magento/skin/frontend/default/blank/images/logo.gif
+M	magento/skin/frontend/default/blank/images/logo_email.gif
+M	magento/skin/frontend/default/blank/images/logo_print.gif
+M	magento/skin/frontend/default/blue/images/logo_email.gif
+M	magento/skin/frontend/default/blue/images/logo_print.gif
+M	magento/skin/frontend/default/default/images/logo_email.gif
+M	magento/skin/frontend/default/default/images/logo_print.gif
+M	magento/skin/frontend/rwd/default/images/logo.gif
+M	magento/skin/frontend/rwd/default/images/logo_email.gif
+M	magento/skin/frontend/rwd/default/images/logo_print.gif
+R084	magento/var/package/Cm_RedisSession-1.9.3.9.xml	magento/var/package/Cm_RedisSession-1.9.3.10.xml
+R097	magento/var/package/Interface_Adminhtml_Default-1.9.3.9.xml	magento/var/package/Interface_Adminhtml_Default-1.9.3.10.xml
+R096	magento/var/package/Interface_Frontend_Base_Default-1.9.3.9.xml	magento/var/package/Interface_Frontend_Base_Default-1.9.3.10.xml
+R097	magento/var/package/Interface_Frontend_Default-1.9.3.9.xml	magento/var/package/Interface_Frontend_Default-1.9.3.10.xml
+R095	magento/var/package/Interface_Frontend_Rwd_Default-1.9.3.9.xml	magento/var/package/Interface_Frontend_Rwd_Default-1.9.3.10.xml
+R094	magento/var/package/Interface_Install_Default-1.9.3.9.xml	magento/var/package/Interface_Install_Default-1.9.3.10.xml
+R080	magento/var/package/Lib_Cm-1.9.3.9.xml	magento/var/package/Lib_Cm-1.9.3.10.xml
+R086	magento/var/package/Lib_Credis-1.9.3.9.xml	magento/var/package/Lib_Credis-1.9.3.10.xml
+R083	magento/var/package/Lib_Google_Checkout-1.9.3.9.xml	magento/var/package/Lib_Google_Checkout-1.9.3.10.xml
+R088	magento/var/package/Lib_IDNA2-1.9.3.9.xml	magento/var/package/Lib_IDNA2-1.9.3.10.xml
+R095	magento/var/package/Lib_Js_Calendar-1.51.1.15.xml	magento/var/package/Lib_Js_Calendar-1.51.1.16.xml
+R099	magento/var/package/Lib_Js_Ext-1.9.3.9.xml	magento/var/package/Lib_Js_Ext-1.9.3.10.xml
+R096	magento/var/package/Lib_Js_Mage-1.9.3.9.xml	magento/var/package/Lib_Js_Mage-1.9.3.10.xml
+R099	magento/var/package/Lib_Js_Prototype-1.9.3.9.xml	magento/var/package/Lib_Js_Prototype-1.9.3.10.xml
+R099	magento/var/package/Lib_Js_TinyMCE-3.5.11.14.xml	magento/var/package/Lib_Js_TinyMCE-3.5.11.15.xml
+R092	magento/var/package/Lib_LinLibertineFont-2.8.14.15.xml	magento/var/package/Lib_LinLibertineFont-2.8.14.16.xml
+R098	magento/var/package/Lib_Mage-1.9.3.9.xml	magento/var/package/Lib_Mage-1.9.3.10.xml
+R094	magento/var/package/Lib_Magento-1.9.3.9.xml	magento/var/package/Lib_Magento-1.9.3.10.xml
+R086	magento/var/package/Lib_Pelago-1.9.3.9.xml	magento/var/package/Lib_Pelago-1.9.3.10.xml
+R093	magento/var/package/Lib_Phpseclib-1.9.3.9.xml	magento/var/package/Lib_Phpseclib-1.9.3.10.xml
+R091	magento/var/package/Lib_Unserialize-1.9.3.9.xml	magento/var/package/Lib_Unserialize-1.9.3.10.xml
+R098	magento/var/package/Lib_Varien-1.9.3.9.xml	magento/var/package/Lib_Varien-1.9.3.10.xml
+R099	magento/var/package/Lib_ZF-1.12.10.14.xml	magento/var/package/Lib_ZF-1.12.10.15.xml
+R099	magento/var/package/Lib_ZF_Locale-1.12.10.14.xml	magento/var/package/Lib_ZF_Locale-1.12.10.15.xml
+A	magento/var/package/Mage_All_Latest-1.9.3.10.xml
+D	magento/var/package/Mage_All_Latest-1.9.3.9.xml
+R096	magento/var/package/Mage_Centinel-1.9.3.9.xml	magento/var/package/Mage_Centinel-1.9.3.10.xml
+R088	magento/var/package/Mage_Compiler-1.9.3.9.xml	magento/var/package/Mage_Compiler-1.9.3.10.xml
+R098	magento/var/package/Mage_Core_Adminhtml-1.9.3.9.xml	magento/var/package/Mage_Core_Adminhtml-1.9.3.10.xml
+A	magento/var/package/Mage_Core_Modules-1.9.3.10.xml
+D	magento/var/package/Mage_Core_Modules-1.9.3.9.xml
+R098	magento/var/package/Mage_Downloader-1.9.3.9.xml	magento/var/package/Mage_Downloader-1.9.3.10.xml
+R060	magento/var/package/Mage_Locale_en_US-1.9.3.9.xml	magento/var/package/Mage_Locale_en_US-1.9.3.10.xml
+R099	magento/var/package/Magento_Mobile-1.9.3.9.xml	magento/var/package/Magento_Mobile-1.9.3.10.xml
+R097	magento/var/package/Phoenix_Moneybookers-1.9.3.9.xml	magento/var/package/Phoenix_Moneybookers-1.9.3.10.xml
