@@ -1,8 +1,8 @@
+[![Gravity Department](https://cdn.gravitydept.com/github/repo-header.png)](https://gravitydept.com/)
+
 # Magento Release Diffs
 
 Useful release diffs for Magento (without copyright changes).
-
-[![Gravity Department](http://gravitydept.com/_themes/gravdept/img/logo-footer.png)](http://gravitydept.com/)
 
 ## Backstory
 
