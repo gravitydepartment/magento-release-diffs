@@ -1,0 +1,144 @@
+
+RELEASE DIFF
+Magento Community 1.9.4.1 - 1.9.4.2
+https://github.com/gravitydepartment/magento-release-diffs
+
+// ----------------------------------------------
+
+M	magento/RELEASE_NOTES.txt
+M	magento/app/Mage.php
+M	magento/app/code/core/Mage/Admin/Model/Block.php
+M	magento/app/code/core/Mage/Admin/Model/User.php
+M	magento/app/code/core/Mage/AdminNotification/etc/system.xml
+M	magento/app/code/core/Mage/Adminhtml/Block/Api/Role/Grid/User.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Edit/Tab/Super/Config.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Newsletter/Queue/Preview.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Newsletter/Template/Preview.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Permissions/Role/Grid/User.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Sales/Creditmemo/Grid.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Sales/Invoice/Grid.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Sales/Order/Create/Header.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Sales/Order/Creditmemo/Create.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Sales/Order/Grid.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Sales/Order/Invoice/Create.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Sales/Order/Shipment/Create.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Sales/Order/View.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Sales/Shipment/Grid.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Sales/Transactions/Grid.php
+M	magento/app/code/core/Mage/Adminhtml/Block/System/Email/Template/Preview.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Template.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Widget/Grid/Column/Renderer/Abstract.php
+M	magento/app/code/core/Mage/Adminhtml/Model/LayoutUpdate/Validator.php
+M	magento/app/code/core/Mage/Adminhtml/Model/System/Config/Backend/Baseurl.php
+M	magento/app/code/core/Mage/Adminhtml/Model/System/Config/Backend/Locale.php
+M	magento/app/code/core/Mage/Adminhtml/Model/System/Config/Backend/Serialized/Array.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Catalog/Product/AttributeController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Catalog/Product/ReviewController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Catalog/ProductController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Checkout/AgreementController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Newsletter/TemplateController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Promo/CatalogController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Promo/QuoteController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/Sales/Order/CreateController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/SitemapController.php
+M	magento/app/code/core/Mage/Adminhtml/controllers/System/Email/TemplateController.php
+M	magento/app/code/core/Mage/Authorizenet/Model/Directpost.php
+M	magento/app/code/core/Mage/Authorizenet/Model/Directpost/Request.php
+M	magento/app/code/core/Mage/Authorizenet/Model/Directpost/Response.php
+M	magento/app/code/core/Mage/Authorizenet/etc/config.xml
+M	magento/app/code/core/Mage/Authorizenet/etc/system.xml
+M	magento/app/code/core/Mage/Catalog/Helper/Product.php
+M	magento/app/code/core/Mage/Catalog/controllers/Product/CompareController.php
+M	magento/app/code/core/Mage/Checkout/Model/Session.php
+M	magento/app/code/core/Mage/Checkout/controllers/OnepageController.php
+M	magento/app/code/core/Mage/Cms/Helper/Data.php
+M	magento/app/code/core/Mage/Cms/Model/Wysiwyg/Config.php
+M	magento/app/code/core/Mage/Cms/etc/config.xml
+M	magento/app/code/core/Mage/Compiler/Model/Process.php
+M	magento/app/code/core/Mage/Core/Helper/Abstract.php
+M	magento/app/code/core/Mage/Core/Helper/Data.php
+M	magento/app/code/core/Mage/Core/Model/Design/Package.php
+M	magento/app/code/core/Mage/Core/Model/Email/Template/Filter.php
+M	magento/app/code/core/Mage/Core/Model/File/Validator/AvailablePath.php
+M	magento/app/code/core/Mage/Core/Model/Observer.php
+M	magento/app/code/core/Mage/Core/etc/config.xml
+M	magento/app/code/core/Mage/Core/functions.php
+M	magento/app/code/core/Mage/CurrencySymbol/Model/System/Currencysymbol.php
+M	magento/app/code/core/Mage/Downloadable/controllers/DownloadController.php
+M	magento/app/code/core/Mage/Paygate/etc/system.xml
+M	magento/app/code/core/Mage/SalesRule/Model/Coupon/Massgenerator.php
+M	magento/app/code/core/Mage/SalesRule/Model/Resource/Report/Rule/Createdat.php
+M	magento/app/code/core/Mage/Sendfriend/etc/config.xml
+M	magento/app/code/core/Mage/Sendfriend/etc/system.xml
+M	magento/app/design/adminhtml/default/default/template/catalog/product/composite/fieldset/configurable.phtml
+M	magento/app/design/adminhtml/default/default/template/catalog/product/helper/gallery.phtml
+M	magento/app/design/adminhtml/default/default/template/catalog/product/tab/inventory.phtml
+M	magento/app/design/adminhtml/default/default/template/currencysymbol/grid.phtml
+M	magento/app/design/adminhtml/default/default/template/customer/tab/addresses.phtml
+M	magento/app/design/adminhtml/default/default/template/customer/tab/view.phtml
+M	magento/app/design/adminhtml/default/default/template/notification/window.phtml
+M	magento/app/design/adminhtml/default/default/template/sales/order/create/data.phtml
+M	magento/app/design/adminhtml/default/default/template/sales/order/view/info.phtml
+M	magento/app/design/adminhtml/default/default/template/system/currency/rate/matrix.phtml
+M	magento/app/design/adminhtml/default/default/template/widget/instance/js.phtml
+M	magento/app/locale/en_US/Mage_Adminhtml.csv
+M	magento/app/locale/en_US/Mage_Authorizenet.csv
+M	magento/app/locale/en_US/Mage_CatalogRule.csv
+M	magento/app/locale/en_US/Mage_Core.csv
+M	magento/app/locale/en_US/Mage_Paygate.csv
+M	magento/app/locale/en_US/Mage_Sales.csv
+M	magento/app/locale/en_US/Mage_Sitemap.csv
+M	magento/dev/tests/functional/credentials.xml.dist
+M	magento/dev/tests/functional/tests/app/Mage/Admin/Test/TestCase/CreateAdminUserEntityTest.xml
+M	magento/dev/tests/functional/tests/app/Mage/Admin/Test/TestCase/UseAclRoleWithRestrictedGwsScopeTest.php
+M	magento/dev/tests/functional/tests/app/Mage/Admin/Test/TestCase/UseAclRoleWithRestrictedGwsScopeTest.xml
+M	magento/dev/tests/functional/tests/app/Mage/Adminhtml/Test/Block/System/Store/Delete/Website.php
+M	magento/dev/tests/functional/tests/app/Mage/Adminhtml/Test/TestStep/DeleteWebsiteStep.php
+M	magento/dev/tests/functional/tests/app/Mage/Authorizenet/Test/Repository/ConfigData.xml
+M	magento/dev/tests/functional/tests/app/Mage/Catalog/Test/Constraint/AssertProductSpecialPriceNotLargerActual.php
+M	magento/dev/tests/functional/tests/app/Mage/Catalog/Test/TestCase/Product/CreateSimpleProductEntityTest.xml
+M	magento/dev/tests/functional/tests/app/Mage/Cms/Test/TestCase/CreateCmsPageEntityTest.php
+M	magento/dev/tests/functional/tests/app/Mage/Payment/Test/Fixture/Cc.xml
+M	magento/dev/tests/functional/tests/app/Mage/Payment/Test/Fixture/ValidationPassword.xml
+M	magento/downloader/Maged/Controller.php
+M	magento/js/mage/adminhtml/wysiwyg/tiny_mce/setup.js
+M	magento/js/tiny_mce/plugins/media/js/media.js
+M	magento/js/varien/js.js
+M	magento/lib/phpseclib/PHP/Compat/Function/array_fill.php
+M	magento/lib/phpseclib/PHP/Compat/Function/bcpowmod.php
+M	magento/lib/phpseclib/PHP/Compat/Function/str_split.php
+R085	magento/var/package/Cm_RedisSession-1.9.4.1.xml	magento/var/package/Cm_RedisSession-1.9.4.2.xml
+R097	magento/var/package/Interface_Adminhtml_Default-1.9.4.1.xml	magento/var/package/Interface_Adminhtml_Default-1.9.4.2.xml
+R099	magento/var/package/Interface_Frontend_Base_Default-1.9.4.1.xml	magento/var/package/Interface_Frontend_Base_Default-1.9.4.2.xml
+R098	magento/var/package/Interface_Frontend_Default-1.9.4.1.xml	magento/var/package/Interface_Frontend_Default-1.9.4.2.xml
+R099	magento/var/package/Interface_Frontend_Rwd_Default-1.9.4.1.xml	magento/var/package/Interface_Frontend_Rwd_Default-1.9.4.2.xml
+R095	magento/var/package/Interface_Install_Default-1.9.4.1.xml	magento/var/package/Interface_Install_Default-1.9.4.2.xml
+R082	magento/var/package/Lib_Cm-1.9.4.1.xml	magento/var/package/Lib_Cm-1.9.4.2.xml
+R086	magento/var/package/Lib_Credis-1.9.4.1.xml	magento/var/package/Lib_Credis-1.9.4.2.xml
+R083	magento/var/package/Lib_Google_Checkout-1.9.4.1.xml	magento/var/package/Lib_Google_Checkout-1.9.4.2.xml
+R089	magento/var/package/Lib_IDNA2-1.9.4.1.xml	magento/var/package/Lib_IDNA2-1.9.4.2.xml
+R095	magento/var/package/Lib_Js_Calendar-1.51.1.18.xml	magento/var/package/Lib_Js_Calendar-1.51.1.19.xml
+R099	magento/var/package/Lib_Js_Ext-1.9.4.1.xml	magento/var/package/Lib_Js_Ext-1.9.4.2.xml
+R092	magento/var/package/Lib_Js_Mage-1.9.4.1.xml	magento/var/package/Lib_Js_Mage-1.9.4.2.xml
+R099	magento/var/package/Lib_Js_Prototype-1.9.4.1.xml	magento/var/package/Lib_Js_Prototype-1.9.4.2.xml
+R099	magento/var/package/Lib_Js_TinyMCE-3.5.11.17.xml	magento/var/package/Lib_Js_TinyMCE-3.5.11.18.xml
+R092	magento/var/package/Lib_LinLibertineFont-2.8.14.18.xml	magento/var/package/Lib_LinLibertineFont-2.8.14.19.xml
+R098	magento/var/package/Lib_Mage-1.9.4.1.xml	magento/var/package/Lib_Mage-1.9.4.2.xml
+R094	magento/var/package/Lib_Magento-1.9.4.1.xml	magento/var/package/Lib_Magento-1.9.4.2.xml
+R087	magento/var/package/Lib_Mcryptcompat-1.9.4.1.xml	magento/var/package/Lib_Mcryptcompat-1.9.4.2.xml
+R086	magento/var/package/Lib_Pelago-1.9.4.1.xml	magento/var/package/Lib_Pelago-1.9.4.2.xml
+R087	magento/var/package/Lib_Phpseclib-1.9.4.1.xml	magento/var/package/Lib_Phpseclib-1.9.4.2.xml
+R091	magento/var/package/Lib_Unserialize-1.9.4.1.xml	magento/var/package/Lib_Unserialize-1.9.4.2.xml
+R098	magento/var/package/Lib_Varien-1.9.4.1.xml	magento/var/package/Lib_Varien-1.9.4.2.xml
+R099	magento/var/package/Lib_ZF-1.12.10.17.xml	magento/var/package/Lib_ZF-1.12.10.18.xml
+R099	magento/var/package/Lib_ZF_Locale-1.12.10.17.xml	magento/var/package/Lib_ZF_Locale-1.12.10.18.xml
+D	magento/var/package/Mage_All_Latest-1.9.4.1.xml
+A	magento/var/package/Mage_All_Latest-1.9.4.2.xml
+R096	magento/var/package/Mage_Centinel-1.9.4.1.xml	magento/var/package/Mage_Centinel-1.9.4.2.xml
+R086	magento/var/package/Mage_Compiler-1.9.4.1.xml	magento/var/package/Mage_Compiler-1.9.4.2.xml
+R095	magento/var/package/Mage_Core_Adminhtml-1.9.4.1.xml	magento/var/package/Mage_Core_Adminhtml-1.9.4.2.xml
+R098	magento/var/package/Mage_Core_Modules-1.9.4.1.xml	magento/var/package/Mage_Core_Modules-1.9.4.2.xml
+R098	magento/var/package/Mage_Downloader-1.9.4.1.xml	magento/var/package/Mage_Downloader-1.9.4.2.xml
+R091	magento/var/package/Mage_Locale_en_US-1.9.4.1.xml	magento/var/package/Mage_Locale_en_US-1.9.4.2.xml
+R099	magento/var/package/Magento_Mobile-1.9.4.1.xml	magento/var/package/Magento_Mobile-1.9.4.2.xml
+R097	magento/var/package/Phoenix_Moneybookers-1.9.4.1.xml	magento/var/package/Phoenix_Moneybookers-1.9.4.2.xml
