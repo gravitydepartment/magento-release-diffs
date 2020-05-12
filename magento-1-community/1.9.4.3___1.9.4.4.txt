@@ -1,0 +1,83 @@
+
+RELEASE DIFF
+Magento Community 1.9.4.3 - 1.9.4.4
+https://github.com/gravitydepartment/magento-release-diffs
+
+// ----------------------------------------------
+
+M	magento/RELEASE_NOTES.txt
+M	magento/app/Mage.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Catalog/Product/Helper/Form/Gallery/Content.php
+M	magento/app/code/core/Mage/Adminhtml/Block/Cms/Wysiwyg/Images/Content/Uploader.php
+M	magento/app/code/core/Mage/Compiler/Block/Process.php
+M	magento/app/code/core/Mage/Compiler/Model/Process.php
+M	magento/app/code/core/Mage/Compiler/controllers/Adminhtml/Compiler/ProcessController.php
+M	magento/app/code/core/Mage/Core/Model/Input/Filter/MaliciousCode.php
+M	magento/app/code/core/Mage/Page/etc/config.xml
+M	magento/app/design/adminhtml/default/default/template/forgotpassword.phtml
+M	magento/app/design/adminhtml/default/default/template/login.phtml
+M	magento/app/design/adminhtml/default/default/template/page/head.phtml
+M	magento/app/design/adminhtml/default/default/template/resetforgottenpassword.phtml
+M	magento/app/locale/en_US/Mage_Compiler.csv
+M	magento/app/locale/en_US/Mage_Page.csv
+M	magento/dev/tests/functional/tests/app/Mage/Adminhtml/Test/Block/Catalog/Product/Attribute/Set/Main.php
+M	magento/dev/tests/functional/tests/app/Mage/Authorizenet/Test/Repository/ConfigData.xml
+M	magento/dev/tests/functional/tests/app/Mage/Checkout/Test/TestCase/OnePageCheckoutWithinOnlineShippingMethods.xml
+M	magento/dev/tests/functional/tests/app/Mage/Customer/Test/TestCase/ChangeCustomerPasswordTest.php
+M	magento/dev/tests/functional/tests/app/Mage/Customer/Test/TestCase/ChangeCustomerPasswordTest.xml
+M	magento/downloader/Maged/Controller.php
+M	magento/downloader/lib/Mage/Connect/Package.php
+M	magento/downloader/template/footer.phtml
+M	magento/downloader/template/install/footer.phtml
+M	magento/errors/default/page.phtml
+M	magento/js/varien/js.js
+M	magento/lib/Mage/Connect/Command/Install.php
+M	magento/lib/Mage/Connect/Package.php
+R085	magento/var/package/Cm_RedisSession-1.9.4.3.xml	magento/var/package/Cm_RedisSession-1.9.4.4.xml
+D	magento/var/package/Interface_Adminhtml_Default-1.9.4.3.xml
+A	magento/var/package/Interface_Adminhtml_Default-1.9.4.4.xml
+D	magento/var/package/Interface_Frontend_Base_Default-1.9.4.3.xml
+A	magento/var/package/Interface_Frontend_Base_Default-1.9.4.4.xml
+R095	magento/var/package/Interface_Frontend_Default-1.9.4.3.xml	magento/var/package/Interface_Frontend_Default-1.9.4.4.xml
+D	magento/var/package/Interface_Frontend_Rwd_Default-1.9.4.3.xml
+A	magento/var/package/Interface_Frontend_Rwd_Default-1.9.4.4.xml
+R063	magento/var/package/Interface_Install_Default-1.9.4.3.xml	magento/var/package/Interface_Install_Default-1.9.4.4.xml
+R082	magento/var/package/Lib_Cm-1.9.4.3.xml	magento/var/package/Lib_Cm-1.9.4.4.xml
+R086	magento/var/package/Lib_Credis-1.9.4.3.xml	magento/var/package/Lib_Credis-1.9.4.4.xml
+R083	magento/var/package/Lib_Google_Checkout-1.9.4.3.xml	magento/var/package/Lib_Google_Checkout-1.9.4.4.xml
+R089	magento/var/package/Lib_IDNA2-1.9.4.3.xml	magento/var/package/Lib_IDNA2-1.9.4.4.xml
+R095	magento/var/package/Lib_Js_Calendar-1.51.1.20.xml	magento/var/package/Lib_Js_Calendar-1.51.1.21.xml
+R098	magento/var/package/Lib_Js_Ext-1.9.4.3.xml	magento/var/package/Lib_Js_Ext-1.9.4.4.xml
+D	magento/var/package/Lib_Js_Mage-1.9.4.3.xml
+A	magento/var/package/Lib_Js_Mage-1.9.4.4.xml
+R099	magento/var/package/Lib_Js_Prototype-1.9.4.3.xml	magento/var/package/Lib_Js_Prototype-1.9.4.4.xml
+R099	magento/var/package/Lib_Js_TinyMCE-3.5.11.19.xml	magento/var/package/Lib_Js_TinyMCE-3.5.11.20.xml
+R092	magento/var/package/Lib_LinLibertineFont-2.8.14.20.xml	magento/var/package/Lib_LinLibertineFont-2.8.14.21.xml
+D	magento/var/package/Lib_Mage-1.9.4.3.xml
+A	magento/var/package/Lib_Mage-1.9.4.4.xml
+D	magento/var/package/Lib_Magento-1.9.4.3.xml
+A	magento/var/package/Lib_Magento-1.9.4.4.xml
+R087	magento/var/package/Lib_Mcryptcompat-1.9.4.3.xml	magento/var/package/Lib_Mcryptcompat-1.9.4.4.xml
+R086	magento/var/package/Lib_Pelago-1.9.4.3.xml	magento/var/package/Lib_Pelago-1.9.4.4.xml
+R096	magento/var/package/Lib_Phpseclib-1.9.4.3.xml	magento/var/package/Lib_Phpseclib-1.9.4.4.xml
+D	magento/var/package/Lib_Unserialize-1.9.4.3.xml
+A	magento/var/package/Lib_Unserialize-1.9.4.4.xml
+D	magento/var/package/Lib_Varien-1.9.4.3.xml
+A	magento/var/package/Lib_Varien-1.9.4.4.xml
+R099	magento/var/package/Lib_ZF-1.12.10.19.xml	magento/var/package/Lib_ZF-1.12.10.20.xml
+R099	magento/var/package/Lib_ZF_Locale-1.12.10.19.xml	magento/var/package/Lib_ZF_Locale-1.12.10.20.xml
+D	magento/var/package/Mage_All_Latest-1.9.4.3.xml
+A	magento/var/package/Mage_All_Latest-1.9.4.4.xml
+D	magento/var/package/Mage_Centinel-1.9.4.3.xml
+A	magento/var/package/Mage_Centinel-1.9.4.4.xml
+R052	magento/var/package/Mage_Compiler-1.9.4.3.xml	magento/var/package/Mage_Compiler-1.9.4.4.xml
+D	magento/var/package/Mage_Core_Adminhtml-1.9.4.3.xml
+A	magento/var/package/Mage_Core_Adminhtml-1.9.4.4.xml
+D	magento/var/package/Mage_Core_Modules-1.9.4.3.xml
+A	magento/var/package/Mage_Core_Modules-1.9.4.4.xml
+D	magento/var/package/Mage_Downloader-1.9.4.3.xml
+A	magento/var/package/Mage_Downloader-1.9.4.4.xml
+R097	magento/var/package/Mage_Locale_en_US-1.9.4.3.xml	magento/var/package/Mage_Locale_en_US-1.9.4.4.xml
+D	magento/var/package/Magento_Mobile-1.9.4.3.xml
+A	magento/var/package/Magento_Mobile-1.9.4.4.xml
+R058	magento/var/package/Phoenix_Moneybookers-1.9.4.3.xml	magento/var/package/Phoenix_Moneybookers-1.9.4.4.xml
